@@ -158,12 +158,15 @@ body {
     font-family: 'Syne', sans-serif;
 }
 
-.career .year {
+.career .year, .career .year a {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #8d99a9;
     padding-bottom: .5em;
     font-family: 'Nothing You Could Do', sans-serif;
+
+    outline: none;
+    text-decoration: none;
 }
 
 .career .course {
@@ -211,8 +214,6 @@ body {
     border: none;
 
     text-align: left;
-
-    width: 100%;
 
     display: block;
 
