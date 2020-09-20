@@ -33,12 +33,6 @@ function toggleInfoText(el, button) {
   
     var more = document.getElementById(el);
     more.classList.toggle("more");
-    if (more.classList.contains("more")) {
-        button.innerHTML = "READ MORE";
-    }
-    else {
-        button.innerHTML = "READ LESS";
-    }
 }
 
 var i = 0;

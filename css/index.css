@@ -187,11 +187,16 @@ body {
     background-color: rgba(17, 48, 59,1);
 }
 
-.projects img {
+.projects .icon {
     width: 10vw;
     margin: 1em;
     border-radius: 25%;
     vertical-align: top;
+}
+
+.projects .screenshots {
+    height: 25vh;
+    margin: 1em;
 }
 
 .projects .description {
@@ -205,12 +210,20 @@ body {
     outline: none;
     border: none;
 
+    text-align: left;
+
+    width: 100%;
+
+    display: block;
+
     color: white;
 
-    margin: 0;
+    margin: .5em;
     padding: 0;
 
     color: #8d99a9;
+    font-family: 'Nothing You Could Do', sans-serif;
+    font-size: .8em;
 
     cursor: pointer;
 }
@@ -224,6 +237,11 @@ body {
     font-family: 'Nothing You Could Do', sans-serif;
 }
 
+.projects a {
+    color: #8d99a9;
+    text-decoration: none;
+}
+
 .quote {
     background-color: rgba(17, 48, 59,1);
 
@@ -231,10 +249,6 @@ body {
     font-size: 2em;
     text-align: center;
     padding: 2em;
-}
-
-.description-right {
-    text-align: right;
 }
 
 .contact {
