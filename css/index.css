@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -133,6 +137,11 @@ body {
     cursor: pointer;
 }
 
+.arrow-down a{
+    text-decoration: none;
+    color: white;
+}
+
 .content {
     font-family: 'Balsamiq Sans', monospace;
 
@@ -252,11 +261,16 @@ body {
     padding: 2em;
 }
 
-.contact {
+.contact, .contact a {
     color: #8d99a9;
     font-family: 'Nothing You Could Do', sans-serif;
 
     text-align: center;
+
+    font-size: 1.2em;
+    margin-top: 1em;
+
+    text-decoration: none;
 }
 
 .footer {
@@ -268,6 +282,11 @@ body {
     text-align: right;
 
     height: 2em;
+}
+
+.footer a {
+    color: #8d99a9;
+    text-decoration: none;
 }
 
 .footer p {
@@ -285,6 +304,12 @@ body {
     padding: 3em;
 }
 
+.aboutme a, .aboutme span {
+    text-decoration: none;
+    color: #8d99a9;
+    cursor: pointer;
+}
+
 h1 {
     width: 100%; 
     text-align: center; 
@@ -296,4 +321,60 @@ h1 {
 h1 span { 
     background-color: rgba(17, 48, 59,1);
     padding:0 10px; 
+}
+
+#chatbot {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+}
+
+#chatbot .chat {
+    z-index: 99999;
+
+    position: fixed;
+    width: 50%;
+    background-color: #11303b;
+    height: calc(70% - 2em);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+
+    padding: 1em;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-wrap: break-word; 
+
+    padding-bottom: 3em;
+}
+
+#chatbot.inactive {
+    display: none;
+}
+
+#chatbot input {
+    font-size: 1em;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    color: white;
+    padding-bottom: .5em;
+}
+
+#chatbot .bot {
+    color: orange;
+}
+
+#chatbot .close {
+    width: 100%;
+    height: 100%;
 }

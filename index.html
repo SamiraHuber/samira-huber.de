@@ -19,11 +19,23 @@
         </div>
     </div>
 
-    <div class="arrow-down">more about me &darr;</div>
+    <div class="arrow-down"><a href="#content">more about me &darr;</a></div>
     <!--TOP CONTENT-->
 
+    <!--CHATBOT-->
+    <div id="chatbot" class="inactive">
+        <div class="close" onclick="toggleChatbot()"></div>
+        <div id="chat" class="chat">
+            <div><input id="input" type="text" placeholder="Say something..." autocomplete="off"/></div>
+            <div class="bot">
+                Chatbot: <span id="bot-response">You can ask me anything about Samira. For example about her favorite song, her favorite sunday-activity or about her biggest secret!</span>
+            </div>
+        </div>
+    </div>
+    <!--CHATBOT-->
+
     <!--BOTTOM CONTENT-->
-    <div class="content">
+    <div class="content" id="content">
         <div class="quote">
             Working hard for something we don't care about is called stressed. Working hard for something we love is called passion! <br />- Simon Sinek - 
         </div>
@@ -34,36 +46,25 @@
 
             <h1><span>This is me</span></h1>
 
-        HOBBIES
-        ELON MUSK
-        BOOKS
-
-        Hello you,
-
-        I am a 21 years old software develo
-
-        <h3>PAST</h3>
-
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti neque fugiat corporis voluptates maiores, omnis ut rerum eos minus alias vero impedit voluptate quam velit illum nam, voluptatum, non id.
-
-        <h3>PRESENT</h3>
-        
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eum fuga iusto ab atque harum facilis, distinctio officiis beatae eos! Asperiores sunt animi accusantium ipsam alias nihil eligendi minima iusto!
-
-        <h3>FUTURE</h3>
-        
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolor quod illum veritatis a ad veniam provident alias magnam perspiciatis? Minima doloremque voluptatibus hic numquam illum reprehenderit. Voluptatum, nihil nostrum.
+            The only woman in the office surounded by several male software developers - that is where you usually can find me! I am 21 years old, living in Germany and studying computer science - currently on my <a href="#education">master degree</a>. I have experience in full-stack web development, game development, databases, hosting of web-applications and love to try out new trends. Aside from my <a href="#experience">work experience</a>, I also work on my <a href="#projects">personal projects</a>.
+            <br /><br />
+            So you may guess now, that the only thing I do in my life is coding. But that is not true - not always. I love to take and edit photos. Just check out my <a href="https://photography.samira-huber.de">photography website</a>. Next to that, I also started to play the piano during my bachelor degree and love to do sports - at my last job you could always find me at the table tennis plate during lunchtime.
+            <br /><br />
+            <!--If you want to find out even more about me, you can use my <span onclick="toggleChatbot()">chatbot</span>. Just ask him which books I prefer, which TV-Serie I enjoy watching or about my idol.
+            <br /><br />-->
+            Any questions? Just contact me!
 
             <div class="contact">
-                - mail me - my photography website - my github page - me on GooglePlay-Store -
+                - <a href="mailto:mail@samira-huber.de">mail me</a> 
+                - <a href="https://photography.samira-huber.de">visit my photography website</a> 
+                - <a href="https://github.com/SamiraHuber">go to my github page</a> 
+                - <a href="https://play.google.com/store/apps/developer?id=Samira+Huber">find me on GooglePlay-Store</a> -
             </div>
         </div>
 
         <div class="space"></div>
 
-        <div class="career">
+        <div class="career" id="education">
             <h1><span>Education</span></h1>
 
             <div class="career-step">
@@ -116,7 +117,7 @@
 
         <div class="space"></div>
 
-        <div class="career">
+        <div class="career" id="experience">
             <h1><span>Experience</span></h1>
 
             <!--
@@ -155,7 +156,7 @@
 
         <div class="space"></div>
 
-        <div class="projects">
+        <div class="projects" id="projects">
 
             <h1><span>Personal Projects</span></h1>
 
@@ -299,7 +300,7 @@
                 <div class="description">
                     <div class="info">2020 - JavaScript - VS Code - <b><a href="http://nicoseifert.de">Go to website</a></b></div>
                     NICOSEIFERT.DE
-                    <p>webside for a photographer.
+                    <p>Webside for a photographer containing a portfolio and a contact page.
                         <button onclick="toggleInfoText('nicoseifert-info', this)">&rarr; TECHNICAL INFOS</button>
                         <span class="more" id="nicoseifert-info">
                             xxx
@@ -319,29 +320,38 @@
                     <div class="info">2020 - Flutter - Android Studio - <b><a href="https://play.google.com/store/apps/details?id=com.samirahuber.camsparent2">Go to PlayStore</a></b></div>
                     CAMSPARENT 2
                     <p>
+                        New version of the Android-App Camsparent. Improved with new features and implemented in a new programming language.
                         <button onclick="toggleInfoText('camsparent2-info', this)">&rarr; TECHNICAL INFOS</button>
-                        <span class="more" id="camsparent2-info">
-                            xxx
-                        </span>
+                        <div class="more" id="camsparent2-info">
+                            <ul>
+                                <li>started in 2019</li>
+                                <li>IDE: Android Studio</li>
+                                <li>Programming language: Flutter, Dart</li>
+                                <li>Publication: Sept 18, 2020</li>
+                                <li>Last update: Sept 20, 2020</li>
+                                <li>target group: photographer, traveller</li>
+                            </ul>
+                        </div>
                         <button onclick="toggleInfoText('camsparent2-screenshots', this)">&rarr; SCREENSHOTS</button>
-                        <span class="more" id="camsparent2-screenshots">
+                        <div class="more" id="camsparent2-screenshots">
                             <img class="screenshots" src="images/screenshots/cs2-1.png" />
                             <img class="screenshots" src="images/screenshots/cs2-2.png" />
                             <img class="screenshots" src="images/screenshots/cs2-3.png" />
                             <img class="screenshots" src="images/screenshots/towerbridge.jpg" />
-                        </span>
+                        </div>
                     </p>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <p>IMPRESSUM</p>
+            <p><a href="./impressum.html">IMPRESSUM</a></p>
         </div>
 
     </div>
     <!--BOTTOM CONTENT-->
       
     <script src="js/index.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
 </html>

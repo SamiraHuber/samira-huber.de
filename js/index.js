@@ -35,6 +35,10 @@ function toggleInfoText(el, button) {
     more.classList.toggle("more");
 }
 
+function toggleChatbot() {
+    document.getElementById("chatbot").classList.toggle("inactive");
+}
+
 var i = 0;
 var text = 0;
 var sentences = [];
