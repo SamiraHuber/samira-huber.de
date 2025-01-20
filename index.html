@@ -1,362 +1,65 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <meta name="description" content="Samira Huber - Daughter, Software Developer, Photographer, Student, Dreamer" />
-    <meta name="keywords" content="Samira, Huber, Samira Huber, Baden-Baden, Gaggenau, Photographer, Fotograf, fotografieren, Web, Web-Developer, Weddings, Portrait, Software, Software Development" />
-
-    <title>Samira Huber</title>
-
-    <link rel="stylesheet" href="css/index.css">
+    <title>Samira Huber's Digital Business Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px; /* Increased width for better layout */
+            text-align: center;
+            border-radius: 15px; /* Rounded corners */
+        }
+        .name {
+            color: #003366;
+            font-size: 28px; /* Larger font size */
+            font-weight: bold;
+        }
+        .about {
+            margin-top: 20px;
+            color: #666;
+            font-size: 18px; /* Larger font size */
+            line-height: 1.6;
+        }
+        .social-icons {
+            margin-top: 25px;
+            font-size: 28px; /* Larger icons */
+        }
+        .social-icons a {
+            color: #003366;
+            text-decoration: none;
+            margin: 0 15px; /* Increased spacing */
+        }
+        .social-icons a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-
-    <!--TOP CONTENT-->
-    <div class="image-overlay">
-        <div class="hello-world" id="hello-world"></div>
-        <div class="name">
-            I am <span>Samira Huber</span>
+    <div class="card">
+        <div class="name">Samira Huber</div>
+        <div class="about">
+            I am a Software Developer and Co-Founder with a deep passion for AI, sustainability, and object-oriented programming. My expertise lies in designing AI-based algorithms that promote climate-friendly solutions and translating them into intuitive user interfaces for customers. 
         </div>
-        <div class="description">
-            SOFTWARE DEVELOPMENT STUDENT
-        </div>
-    </div>
-
-    <div class="arrow-down"><a href="#content">more about me &darr;</a></div>
-    <!--TOP CONTENT-->
-
-    <!--CHATBOT-->
-    <div id="chatbot" class="inactive">
-        <div class="close" onclick="toggleChatbot()"></div>
-        <div id="chat" class="chat">
-            <div><input id="input" type="text" placeholder="Say something..." autocomplete="off"/></div>
-            <div class="bot">
-                Chatbot: <span id="bot-response">You can ask me anything about Samira. For example about her favorite song, her favorite sunday-activity or about her biggest secret!</span>
-            </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/samira-huber/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/samirahuber" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </div>
-    <!--CHATBOT-->
-
-    <!--BOTTOM CONTENT-->
-    <div class="content" id="content">
-        <div class="quote">
-            Working hard for something we don't care about is called stressed. Working hard for something we love is called passion! <br />- Simon Sinek - 
-        </div>
-        
-        <div class="space"></div>
-
-        <div class="aboutme">
-
-            <h1><span>This is me</span></h1>
-
-            The only woman in the office surounded by several male software developers - that is where you usually can find me! I am 21 years old, living in Germany and studying computer science - currently on my <a href="#education">master degree</a>. I have experience in full-stack web development, game development, databases, hosting of web-applications and love to try out new trends. Aside from my <a href="#experience">work experience</a>, I also work on my <a href="#projects">personal projects</a>.
-            <br /><br />
-            So you may guess now, that the only thing I do in my life is coding. But that is not true - not always. I love to take and edit photos. Just check out my <a href="https://silbermon.de">photography website</a>. Next to that, I also started to play the piano during my bachelor degree and love to do sports - at my last job you could always find me at the table tennis plate during lunchtime.
-            <br /><br />
-            <!--If you want to find out even more about me, you can use my <span onclick="toggleChatbot()">chatbot</span>. Just ask him which books I prefer, which TV-Serie I enjoy watching or about my idol.
-            <br /><br />-->
-            Any questions? Just contact me!
-
-            <div class="contact">
-                - <a href="mailto:mail@samira-huber.de">mail me</a> 
-                - <a href="https://silbermon.de">visit my photography website</a> 
-                - <a href="https://github.com/SamiraHuber">go to my github page</a> 
-                - <a href="https://play.google.com/store/apps/developer?id=Samira+Huber">find me on GooglePlay-Store</a> -
-            </div>
-        </div>
-
-        <div class="space"></div>
-
-        <div class="career" id="education">
-            <h1><span>Education</span></h1>
-
-            <div class="career-step">
-                <div class="year">Oct 2020 - today</div> 
-                <div class="course">in progress: M. Sc. Computer Science</div>
-                <div class="school">Universität zu Lübeck</div>
-                <div class="dots">&#x22EF;</div>
-                <div class="description">
-                    <b>Main Courses</b><br />
-                    Software Engineering, Entrepreneurial Behavior
-                </div>
-            </div>
-
-            <div class="career-step">
-                <div class="year">May 2018 - Sept 2020</div> 
-                <div class="course">B. Sc. Computer Engineering</div>
-                <div class="school">Duale Hochschule Baden-Württemberg, Karlsruhe</div>
-                <div class="dots">&#x22EF;</div>
-                <div class="description">
-                    <b>Bachelor Thesis</b><br />
-                    Implementation of a recommender system for web-based trainings
-                </div>
-                <div class="dots">&#x22EF;</div>
-                <div class="description">
-                    <b>School Projects</b><br />
-                    &#183; Development of a tracking suit for gamification<br /> 
-                    &#183; Leading frontend-group for full-stack software development project<br /> 
-                    &#183; Leading web-development project (Vue.js, Firebase)
-                </div>
-                <div class="dots">&#x22EF;</div>
-                <div class="description">
-                    <b>Main Courses</b><br />
-                    Software Engineering, Electronical Engineering
-                </div>
-            </div>
-
-            <div class="career-step">
-                <div class="year">Oct 2017 - May 2018</div> 
-                <div class="course">25 credits towards B. Sc. in Mechatronics</div>
-                <div class="school">Duale Hochschule Baden-Württemberg, Karlsruhe</div>
-                <div class="dots">&#x22EF;</div>
-                <div class="description">
-                    <b>Main Courses</b><br />
-                    Software Engineering,
-                    Electrical Engineering,
-                    Mechanical Engineering
-                </div>
-            </div>
-        </div>
-
-        <div class="space"></div>
-
-        <div class="career" id="experience">
-            <h1><span>Experience</span></h1>
-
-            <!--
-            <div class="career-step">
-                <div class="year">Oct 2020 - today</div> 
-                <div class="course">Abusix</div>
-                <div class="dots">&#x22EF;</div>
-                <div class="description">Software Development</div>
-            </div>
-            -->
-
-            <div class="career-step">
-                <div class="year"><a href="https://www.im-systems.com">Intelligent Media Systems AG</a></div> 
-                <div class="school">May 2018 - Sept 2020</div>            
-                <div class="dots">&#x22EF;</div>
-                <div class="description">
-                    <b>Tasks</b><br />
-                    &#183; Refactoring a webbased e-learning catalog of a learning management system<br />
-                    &#183; Rewrite a REST-API to transfer data between to content management systems<br />
-                    &#183; Conception and implementation of a recommender system for web-based trainings<br />
-                    &#183; Code maintenance
-                </div>
-            </div>
-
-            <div class="career-step">
-                <div class="year"><a href="https://www.schaeffler.de">LuK GmbH & Co. KG</a></div> 
-                <div class="school">July 2017 - May 2018</div>            
-                <div class="dots">&#x22EF;</div>
-                <div class="description">
-                    <b>Tasks</b><br />
-                    &#183; Developing a concept for a distance sensor based on induction<br />
-                    &#183; Turning, Milling, Drilling
-                </div>
-            </div>
-        </div>
-
-        <div class="space"></div>
-
-        <div class="projects" id="projects">
-
-            <h1><span>Personal Projects</span></h1>
-
-            <div class="project">
-                <img class="icon" src="images/icons/camsparent.png" />
-                <div class="description">
-                    <div class="info">2019 - Java - Android Studio - <b><a href="https://play.google.com/store/apps/details?id=net.sajak.android.camera2basic&amp;hl=de">Go to PlayStore</a></b></div>
-                    CAMSPARENT
-                    <p> Camsparent is an Android-App that simplifies taking one picture twice from the same viewpoint. By overlaying the first image - for example a shot by daytime - over the camera view, you can easily take the same photo - for example at nighttime - from the exact same view.
-                    Now you have the chance to crop them togerther and create a new magic image containing both photos.
-                        <button onclick="toggleInfoText('camsparent-info', this)">&rarr; TECHNICAL INFOS</button>
-                        <div class="more" id="camsparent-info">
-                            <ul>
-                                <li>started in 2019</li>
-                                <li>in cooperation with <a href="https://jakobgietl.de/">Jakob Gietl</a></li>
-                                <li>IDE: Android Studio</li>
-                                <li>Programming language: Java</li>
-                                <li>Source control: <a href="https://github.com/dotjs4/camsparent">Github</a></li>
-                                <li>Publication: July 24, 2019</li>
-                                <li>Last update: Sept 24, 2019</li>
-                                <li>target group: photographer, traveller</li>
-                                <li>NEW VERSION: CAMSPARENT 2</li>
-                            </ul>
-                        </div>
-                        <button onclick="toggleInfoText('camsparent-screenshots', this)">&rarr; SCREENSHOTS</button>
-                        <span class="more" id="camsparent-screenshots">
-                            <img class="screenshots" src="images/screenshots/cs-1.png" />
-                        <img class="screenshots" src="images/screenshots/cs-2.png" />
-                        <img class="screenshots" src="images/screenshots/towerbridge.jpg" />
-                        </span>  
-                </div>
-            </div>
-            <div class="project">
-                <img class="icon" src="images/icons/zoog.png" />
-                <div class="description">
-                    <div class="info">2019 - C# - Unity - <b><a href="https://play.google.com/store/apps/details?id=com.sajak.zoog&amp;hl=de">Go to PlayStore</a></b></div>
-                    ZOOG
-                    <p>Zoog is a casual game for Android. Perfect to play while waiting for a train or boring school lessons. You need to connect the railways that each station is served from one train. 
-                        <button onclick="toggleInfoText('zoog-info', this)">&rarr; TECHNICAL INFOS</button>
-                        <div class="more" id="zoog-info">
-                            <ul>
-                                <li>started in 2019</li>
-                                <li>Game Engine: Unity</li>
-                                <li>Programming language: C#</li>
-                                <li>Designs made with Adobe Photoshop</li>
-                                <li>Publication: Oct 3, 2019</li>
-                                <li>Last update: Jan 24, 2020</li>
-                            </ul>
-                        </div>
-                        <button onclick="toggleInfoText('zoog-screenshots', this)">&rarr; SCREENSHOTS</button>
-                        <span class="more" id="zoog-screenshots">
-                            <img class="screenshots" src="images/screenshots/Screenshot_20200919-101003.png" />
-                        <img class="screenshots" src="images/screenshots/Screenshot_20200919-101018.png" />
-                        </span>                        
-                    </p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img class="icon" src="images/icons/townify.png" />
-                <div class="description">
-                    <div class="info">2019 - Node.js - React - <b><a href="https://townify.sajak.net">Go to website</a></b></div>
-                    TOWNIFY
-                    <p>Highlight places within your city or town that should be improved. May it be a missing bench for your grandma or no free WIFI close to the train station where you need to wait every morning. Mark and rate what you think needs to be changed!
-                        <button onclick="toggleInfoText('townify-info', this)">&rarr; TECHNICAL INFOS</button>
-                        <div class="more" id="townify-info">
-                            <ul>
-                                <li>started in 2019</li>
-                                <li>in cooperation with <a href="https://jakobgietl.de/">Jakob Gietl</a></li>
-                                <li>Frontend: React</li>
-                                <li>Backend: Node.js</li>
-                                <li>Database: MongoDB</li>
-                                <li>Source control: Gitlab</li>
-                            </ul>
-                        </div>
-                        <button onclick="toggleInfoText('townify-screenshots', this)">&rarr; SCREENSHOTS</button>
-                        <span class="more" id="townify-screenshots">
-                            <img class="screenshots" src="images/screenshots/townify-1.png" />
-                            <img class="screenshots" src="images/screenshots/townify-2.png" />
-                            <img class="screenshots" src="images/screenshots/townify-3.png" />
-                        </span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img class="icon" src="images/icons/pazzy.png" />
-                <div class="description">
-                    <div class="info">2020 - C# - Unity - <b><a href="https://play.google.com/store/apps/details?id=com.SamiraHuber.PaZZy">Go to PlayStore</a></b></div>
-                    PAZZY
-                    <p>This is another casual puzzle game for Android. You need to connect the tiles to bring all numbers down to 0.
-                        <button onclick="toggleInfoText('pazzy-info', this)">&rarr; TECHNICAL INFOS</button>
-                        <div class="more" id="pazzy-info">
-                            <ul>
-                                <li>started in 2020</li>
-                                <li>Game Engine: Unity</li>
-                                <li>Programming language: C#</li>
-                                <li>Designs made with Adobe Photoshop</li>
-                                <li>Publication: Jan 6, 2020</li>
-                                <li>Last update: Feb 6, 2020</li>
-                            </ul>
-                        </div>
-                        <button onclick="toggleInfoText('pazzy-screenshots', this)">&rarr; SCREENSHOTS</button>
-                        <span class="more" id="pazzy-screenshots">
-                        <img class="screenshots" src="images/screenshots/Screenshot_20200919-100856.png" />
-                        <img class="screenshots" src="images/screenshots/Screenshot_20200919-100902.png" />
-                        <img class="screenshots" src="images/screenshots/Screenshot_20200919-100919.png" />
-                        <img class="screenshots" src="images/screenshots/Screenshot_20200919-100948.png" />
-                        </span>
-                    </p>
-                </div>
-            </div>
-            <div class="project">
-                <img class="icon" src="images/icons/famanager.png" />
-                <div class="description">
-                    <div class="info">2020 - Flask - Python - <b><a href="http://famanager.de">Go to website</a></b> - <b><a href="https://play.google.com/store/apps/details?id=com.samirahuber.Famanager">Go to PlayStore</a></b></div>
-                    FAMANAGER
-                    <p>Manage your family dinners and shopping list with this app. You can be part of multiple groups and see what they plan to eat, your debts and what's on their shopping list.
-                        <button onclick="toggleInfoText('famanager-info', this)">&rarr; TECHNICAL INFOS</button>
-                        <div class="more" id="famanager-info">
-                            <ul>
-                                <li>started in 2020</li>
-                                <li>Backend: Flask, Python</li>
-                                <li>Hosting: on my own VPS</li>
-                                <li>Database: MongoDB</li>
-                                <li>Android-Release: Apr 10, 2020</li>
-                            </ul>
-                        </div>
-                        <button onclick="toggleInfoText('famanager-screenshots', this)">&rarr; SCREENSHOTS </button>
-                        <span class="more" id="famanager-screenshots">
-                        <img class="screenshots" src="images/screenshots/Screenshot_20200919-101111.png" />
-                        <img class="screenshots" src="images/screenshots/Screenshot_20200919-101134.png" />
-                        <img class="screenshots" src="images/screenshots/Screenshot_20200919-101223.png" />
-                    </span>
-                </p>
-                    
-                </div>
-            </div>
-            <div class="project">
-                <img class="icon" src="images/icons/nicoseifert.png" />
-                <div class="description">
-                    <div class="info">2020 - JavaScript - VS Code - <b><a href="http://nicoseifert.de">Go to website</a></b></div>
-                    NICOSEIFERT.DE
-                    <p>Webside for a photographer containing a portfolio and a contact page.
-                        <button onclick="toggleInfoText('nicoseifert-info', this)">&rarr; TECHNICAL INFOS</button>
-                        <span class="more" id="nicoseifert-info">
-                            xxx
-                        </span>
-                        <button onclick="toggleInfoText('nicoseifert-screenshots', this)">&rarr; SCREENSHOTS</button>
-                        <span class="more" id="nicoseifert-screenshots">
-                            <img class="screenshots" src="images/screenshots/Bildschirmfoto 2020-09-20 um 10.21.35.png" />
-                            <img class="screenshots" src="images/screenshots/Bildschirmfoto 2020-09-20 um 10.21.51.png" />
-                            <img class="screenshots" src="images/screenshots/Bildschirmfoto 2020-09-20 um 10.22.06.png" />
-                        </span>
-                    </p>
-                </div>
-            </div>
-            <div class="project">
-                <img class="icon" src="images/icons/camsparent.png" />
-                <div class="description">
-                    <div class="info">2020 - Flutter - Android Studio - <b><a href="https://play.google.com/store/apps/details?id=com.samirahuber.camsparent2">Go to PlayStore</a></b></div>
-                    CAMSPARENT 2
-                    <p>
-                        New version of the Android-App Camsparent. Improved with new features and implemented in a new programming language.
-                        <button onclick="toggleInfoText('camsparent2-info', this)">&rarr; TECHNICAL INFOS</button>
-                        <div class="more" id="camsparent2-info">
-                            <ul>
-                                <li>started in 2019</li>
-                                <li>IDE: Android Studio</li>
-                                <li>Programming language: Flutter, Dart</li>
-                                <li>Publication: Sept 18, 2020</li>
-                                <li>Last update: Sept 25, 2020</li>
-                                <li>target group: photographer, traveller</li>
-                            </ul>
-                        </div>
-                        <button onclick="toggleInfoText('camsparent2-screenshots', this)">&rarr; SCREENSHOTS</button>
-                        <div class="more" id="camsparent2-screenshots">
-                            <img class="screenshots" src="images/screenshots/cs2-1.png" />
-                            <img class="screenshots" src="images/screenshots/cs2-2.png" />
-                            <img class="screenshots" src="images/screenshots/cs2-3.png" />
-                            <img class="screenshots" src="images/screenshots/towerbridge.jpg" />
-                        </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p><a href="./impressum.html">IMPRESSUM</a></p>
-        </div>
-
-    </div>
-    <!--BOTTOM CONTENT-->
-      
-    <script src="js/index.js"></script>
-    <script src="js/chatbot.js"></script>
 </body>
 </html>
